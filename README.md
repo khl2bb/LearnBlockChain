@@ -1,2 +1,2 @@
 # LearnBlockChain
-Web site for block chain learner
+블록체인을 배워봅시다아아
