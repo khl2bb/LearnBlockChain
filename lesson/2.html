@@ -6,17 +6,18 @@ number: 2
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
+<style> .toBeRevealed{display:none} </style>
+
 <div class="row">
 <h1>블록체인이 뭐지?</h1>
 
-<p>아래와 같은 거래 장부가 있다고 가정해 봅시다.4</p>
+<p>아래와 같은 거래 장부가 있다고 가정해 봅시다.</p>
   
-  <table class = "table_answer1" table border="1" width ="500" height="100" align = "center">
-	<td colspan = "2">거래장부</td>
-	<th width = "500"></th>
+  <table class = "table_1" table border="1" width ="300" height="100" align = "center">
+	<td colspan = "2" align = "center">거래장부</td>
 	<tr><!-- 첫번째 줄 시작 -->
-	    <td width = "500">빌려준 금액</td>
-	    <td class = "answer2" width = "500"></td>
+	    <td width = "300" align = "center">빌려준 금액(원)</td>
+	    <td class = "answer1" width = "300"></td>
 	</tr><!-- 첫번째 줄 끝 -->
     </table>
 	
@@ -25,57 +26,132 @@ number: 2
 <input type="text" id="inputCode1">	
 <button type="button" class="btn-next1">다음단계</button>
 
-<div class="toBeRevealed">	
-<p>거래 내역이 쌓여 한 장을 채운다.한 장을 복사해 나누어 갖는다.</p>
-	
-  <p>장부를 가진 사람이 두 사람뿐일 때 한사람이 거래 내용을 조작하면 누가 맞는지 확인하기 어렵다.
-  그러나 세 사람이 같은 장부를 가지고 있으면 한 사람이 조작하더라도 나머지 사람이 비교해 줄 수 있다.
-  만약 100명이 같은 장부를 가지고 있다면?, 1000명이 같은 장부를 가지고 있다면?
-  장부를 가진 사람이 많을수록 조작하기 어려워지겠죠.
-  또한 거래장부에 새로 추가되는 페이지가 이전 페이지와 암호로 연결되어 있어 아무나 추가할 수 없게 한다면?
-  오직 이전 페이지와 연결되는 암호를 발견한 사람만 추가할 수 있게 된다.
-  그리고 이 암호를 발견한 사람에게는 보상이 주어진다.
-  위의 거래장부 한 장을 하나의 블록이라고 부르고, 이 블록들이 체인처럼 계속 연결되어 있는 모양이라서 블록체인이라고 부른다.</p>
-</div> 
+<div class = "question2 toBeRevealed">	
+
+
+<table class = "table_2" table border="1" width ="300" height="100" align = "center">
+	<td colspan = "2" align = "center">거래장부</td>
+	<tr><!-- 첫번째 줄 시작 -->
+	    <td width = "300" align = "center">빌려준 금액(원)</td>
+	    <td class = "answer2" width = "300" align = "center"></td>
+	</tr><!-- 첫번째 줄 끝 -->
+    </table>
+    <p>여러분이 입력한 거래 내역이 쌓여 한 장을 채울 겁니다. 이제 한 장을 복사해 나누어 가지겠습니다.</p>
+    <button type="button" class="btn-next2">다음단계</button>
+
+
+  <div class = "question3 toBeRevealed">
+  <table class = "table_3" table border="1" width ="300" height="100" align = "center">
+	<td colspan = "2" align = "center">거래장부1</td>
+	<tr><!-- 첫번째 줄 시작 -->
+	    <td width = "300" align = "center">빌려준 금액(원)</td>
+	    <td class = "answer2" width = "300" align = "center"></td>
+	</tr><!-- 첫번째 줄 끝 -->
+    </table>
+    <table class = "table_4" table border="1" width ="300" height="100" align = "center">
+        <td colspan = "2" align = "center">거래장부2</td>
+        <tr><!-- 첫번째 줄 시작 -->
+            <td width = "300" align = "center">빌려준 금액(원)</td>
+            <td class = "answer3" width = "300" align = "center"></td>
+        </tr><!-- 첫번째 줄 끝 -->
+        </table>
+        <p>이 거래 내역을 가진 사람이 두 사람이라고 생각해봅시다. 두 사람 중 한 사람이 거래 내용을 조작하면 누가 맞는지 확인하기 어렵겠지요? 
+            그렇다면 세 사람의 경우를 생각해봅시다.
+        </p>
+        <button type="button" class="btn-next3">다음단계</button> 
+        <div class = "question4 toBeRevealed">
+            <table class = "table_3" table border="1" width ="300" height="100" align = "center">
+                <td colspan = "2" align = "center">거래장부1</td>
+                <tr><!-- 첫번째 줄 시작 -->
+                    <td width = "300" align = "center">빌려준 금액(원)</td>
+                    <td class = "answer2" width = "300" align = "center"></td>
+                </tr><!-- 첫번째 줄 끝 -->
+                </table>
+            <table class = "table_4" table border="1" width ="300" height="100" align = "center">
+                <td colspan = "2" align = "center">거래장부2</td>
+                <tr><!-- 첫번째 줄 시작 -->
+                    <td width = "300" align = "center">빌려준 금액(원)</td>
+                    <td class = "answer3" width = "300" align = "center"></td>
+                 </tr><!-- 첫번째 줄 끝 -->
+                 </table>
+                 <table class = "table_3" table border="1" width ="300" height="100" align = "center">
+                    <td colspan = "2" align = "center">거래장부3</td>
+                    <tr><!-- 첫번째 줄 시작 -->
+                        <td width = "300" align = "center">빌려준 금액(원)</td>
+                        <td class = "answer2" width = "300" align = "center"></td>
+                    </tr><!-- 첫번째 줄 끝 -->
+                    </table>
+             <p>세 사람이 장부를 가지고 있다면 한 사람이 조작하더라도 나머지 사람이 비교해 줄 수 있겠죠?
+                그렇다면 100명이 같은 거래장부를 가지고 있다면?, 1000명이 가지고 있다면?
+                장부를 가진 사람이 많을 수록 조작하기 어려워질 겁니다. 
+                거기다 거래장부에 새롭게 추가되는 페이지가 이전 페이지와 암호로 연결되어 아무나 추가 할 수 없게 한다면?
+                오직 이전 페이지와 연결되는 암호를 발견한 사람만이 다음 페이지를 추가할 수 있게 될 겁니다. 
+                그 암호를 발견한 사람에게는 코인이라는 보상이 주어집니다.
+                위의 거래장부 한 장을 하나의 블록이라고 부르고, 이 블록들이 체인처럼 계속 연결되어 있는 모양이라서 블록체인이라고 부릅니다.
+            </p>
+            <button type="button" class="btn-next4">다음단계</button> 
+            </div>
+
+    </div>
+
+
+</div>
+    
+
+</div>
 
 <button class="btn btn-default btn-skip">Skip</button>
 
-<div class="toBeRevealed">
-  <div class="row">
+<div class="question5 toBeRevealed">
   <hr>
-  <p>All right!</p>
-  <p>It's up to you to decide when it's appropriate to use which header. In general,
-    headers one and six should be used sparingly.</p>
-  <p>You can't really make a header bold, but you can italicize certain words. In
-    the box below, make the first line a heading level four, and italicize the name of the book:</p>
-    <div class="col-md-5 scratchpad"></div>
-    <div class="col-md-5 renderpad"></div>
-  </div>
-  <button class="btn btn-default btn-skip">Skip</button>
-</div>
-
-
-<div class="toBeRevealed">
-  <hr>
-  <p>And that's all there is to making headers in Markdown.</p>
+  <h3>위의 거래장부 한 장을 하나의 블록이라고 부르고, 이 블록들이 체인처럼 계속 연결되어 있는 모양이라서 블록체인이라고 부릅니다.</h3>
   <a class="btn btn-lg btn-success" href="{{ site.baseurl}}/lesson/3">On to the next lesson!</a>
 </div>
 
 <script>
-  (function() {
-    var btn1 = $('.btn-next1');
-    var inputCode1 = $('#inputCode1');
-    var Q1 = $('.question1');
-    var Q2 = $('.question2');
+ (function() {
+      var btn1 = $('.btn-next1');
+      var btn2 = $('.btn-next2');
+      var btn3 = $('.btn-next3');
+      var btn4 = $('.btn-next4');
+      var skipbtn = $('.btn-skip');
+      var IC1 = $('#inputCode1');
+      var Q1 = $('.question1');
+      var Q2 = $('.question2');
+      var Q3 = $('.question3');
+      var Q4 = $('.question4');
+      var Q5 = $('.question5');
 
-    btn1.click(function () {
-      var inputText1 = inputCode1.value; /* #inputCode1 의 값을 받아옴. */
+      var answer1 = $('.answer2');
+      var answer2 = $('.answer3');
 
-	 //$('.table_answer1.answer2') = inputText1;
-      //if(inputText1 === '4') { /* inputCode1 의 값이 스트링 값이라서 스트링으로 비교 */
-         Q2.removeClass('toBeRevealed'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
-      }
+      btn1.click(function () {
+
+        answer1.text(IC1.val() + "원");
+        //if(inputText1 === '4') { /* inputCode1 의 값이 스트링 값이라서 스트링으로 비교 */
+        Q2.removeClass('toBeRevealed'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
     });
-  })($);
+
+        btn2.click(function () {
+            answer2.text(IC1.val() - 1 + "원");
+            Q3.removeClass('toBeRevealed');
+        });
+
+        btn3.click(function () {
+            Q4.removeClass('toBeRevealed');
+        });
+
+        btn4.click(function () {
+            Q5.removeClass('toBeRevealed');
+        });
+
+        skipbtn.click(function () {
+            Q2.removeClass('toBeRevealed');
+            Q3.removeClass('toBeRevealed');
+            Q4.removeClass('toBeRevealed');
+            Q5.removeClass('toBeRevealed');
+        });
+    })($);
+
 
 </script>
