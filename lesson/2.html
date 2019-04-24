@@ -11,26 +11,22 @@ number: 2
 
 <p>아래와 같은 거래 장부가 있다고 가정해 봅시다.</p>
   
-  <table class = "table_answer1 "table border="1" width ="500" height="300" align = "center">
+  <table class = "table_answer1 "table border="1" width ="500" height="500" align = "center">
 	<th>거래</th>
 	<th>장부</th>
 	<tr><!-- 첫번째 줄 시작 -->
 	    <td>빌려준 금액</td>
 	    <td class = "answer"></td>
 	</tr><!-- 첫번째 줄 끝 -->
-	<tr><!-- 두번째 줄 시작 -->
-	    <td></td>
-	    <td></td>
-	</tr><!-- 두번째 줄 끝 -->
     </table>
 	
 <p> 이 테이블에 여러분이 누군가에게 빌려준 금액을 적는다고 생각해봅시다.</p>
 <p> 여러분이 빌려준 금액을 입력해 봅시다.</p>
 <input type="text" id="inputCode1">	
 <button type="button" class="btn-next1">다음단계</button>
-	
+
+<div class="toBeRevealed">	
 <p>거래 내역이 쌓여 한 장을 채운다.한 장을 복사해 나누어 갖는다.</p>
-	
 	
   <p>장부를 가진 사람이 두 사람뿐일 때 한사람이 거래 내용을 조작하면 누가 맞는지 확인하기 어렵다.
   그러나 세 사람이 같은 장부를 가지고 있으면 한 사람이 조작하더라도 나머지 사람이 비교해 줄 수 있다.
@@ -40,7 +36,7 @@ number: 2
   오직 이전 페이지와 연결되는 암호를 발견한 사람만 추가할 수 있게 된다.
   그리고 이 암호를 발견한 사람에게는 보상이 주어진다.
   위의 거래장부 한 장을 하나의 블록이라고 부르고, 이 블록들이 체인처럼 계속 연결되어 있는 모양이라서 블록체인이라고 부른다.</p>
- 
+	</div> 
 
 <p>To make headers in Markdown, you preface the phrase with a hash mark (<code>#</code>). You
 place the same number of hash marks as the size of the header you want. For example,
