@@ -2,6 +2,7 @@
 layout: default
 title: 블록체인이 뭐지?
 ---
+<img src="hmmteresting.png">
 블록체인은 무엇을 말하는 걸까?
 
 단순히 생각했을 때, 블록 + 체인? => 체인으로 연결된 블록??
