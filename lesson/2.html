@@ -11,7 +11,7 @@ number: 2
 
 <p>아래와 같은 거래 장부가 있다고 가정해 봅시다.</p>
   
-  <table class = "table_answer1 "table border="1" width ="500" height="500" align = "center">
+  <table class = "table_answer1" table border="1" width ="500" height="500" align = "center">
 	<th>거래</th>
 	<th>장부</th>
 	<tr><!-- 첫번째 줄 시작 -->
@@ -25,7 +25,7 @@ number: 2
 <input type="text" id="inputCode1">	
 <button type="button" class="btn-next1">다음단계</button>
 
-<div class="toBeRevealed">	
+<div class="question2 toBeRevealed">	
 <p>거래 내역이 쌓여 한 장을 채운다.한 장을 복사해 나누어 갖는다.</p>
 	
   <p>장부를 가진 사람이 두 사람뿐일 때 한사람이 거래 내용을 조작하면 누가 맞는지 확인하기 어렵다.
@@ -71,9 +71,9 @@ number: 2
     btn-next1.click(function () {
       var inputText1 = inputCode1[0].value; /* #inputCode1 의 값을 받아옴. */
 
-	 $('.table_answer1 .answer') = inputText1;
+	 $('.table_answer1.answer') = inputText1;
       //if(inputText1 === '4') { /* inputCode1 의 값이 스트링 값이라서 스트링으로 비교 */
-        toBeRevealed.removeClass('hide'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
+        Q2.removeClass('toBeRevealed'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
       }
     });
   })($);
