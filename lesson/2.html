@@ -9,13 +9,13 @@ number: 2
 <div class="row">
 <h1>블록체인이 뭐지?</h1>
 
-<p>아래와 같은 거래 장부가 있다고 가정해 봅시다.3</p>
+<p>아래와 같은 거래 장부가 있다고 가정해 봅시다.4</p>
   
   <table class = "table_answer1" table border="1" width ="500" height="100" align = "center">
 	<td colspan = "2">거래장부</td>
 	<th width = "500"></th>
 	<tr><!-- 첫번째 줄 시작 -->
-	    <td>빌려준 금액</td>
+	    <td width = "500">빌려준 금액</td>
 	    <td class = "answer2" width = "500"></td>
 	</tr><!-- 첫번째 줄 끝 -->
     </table>
@@ -71,7 +71,7 @@ number: 2
     btn1.click(function () {
       var inputText1 = inputCode1.value; /* #inputCode1 의 값을 받아옴. */
 
-	 $('.table_answer1.answer2') = inputText1;
+	 //$('.table_answer1.answer2') = inputText1;
       //if(inputText1 === '4') { /* inputCode1 의 값이 스트링 값이라서 스트링으로 비교 */
          Q2.removeClass('toBeRevealed'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
       }
