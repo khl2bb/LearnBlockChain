@@ -4,25 +4,35 @@ title: Headers
 number: 2
 ---
 
-<div class="row">
-<p>블록체인이 뭐지?</p>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-<p>거래 장부가 있다.거래 내역이 쌓여 한 장을 채운다.한 장을 복사해 나누어 갖는다.</p>
+<div class="row">
+<h1>블록체인이 뭐지?</h1>
+
+<p>아래와 같은 거래 장부가 있다고 가정해 봅시다.</p>
   
-  <table border="1">
-	<th>테이블</th>
-	<th>만들기</th>
+  <table class = "table_answer1 "table border="1" width ="500" height="300" align = "center">
+	<th>거래</th>
+	<th>장부</th>
 	<tr><!-- 첫번째 줄 시작 -->
-	    <td>첫번째 칸</td>
-	    <td>두번째 칸</td>
+	    <td>빌려준 금액</td>
+	    <td class = "answer"></td>
 	</tr><!-- 첫번째 줄 끝 -->
 	<tr><!-- 두번째 줄 시작 -->
-	    <td>첫번째 칸</td>
-	    <td>두번째 칸</td>
+	    <td></td>
+	    <td></td>
 	</tr><!-- 두번째 줄 끝 -->
     </table>
-  
-  <p>장부를 가진 사람이 두 사람뿐일 때 한사람이 거래 내영을 조작하면 누가 맞는지 확인하기 어렵다.
+	
+<p> 이 테이블에 여러분이 누군가에게 빌려준 금액을 적는다고 생각해봅시다.</p>
+<p> 여러분이 빌려준 금액을 입력해 봅시다.</p>
+<input type="text" id="inputCode1">	
+<button type="button" class="btn-next1">다음단계</button>
+	
+<p>거래 내역이 쌓여 한 장을 채운다.한 장을 복사해 나누어 갖는다.</p>
+	
+	
+  <p>장부를 가진 사람이 두 사람뿐일 때 한사람이 거래 내용을 조작하면 누가 맞는지 확인하기 어렵다.
   그러나 세 사람이 같은 장부를 가지고 있으면 한 사람이 조작하더라도 나머지 사람이 비교해 줄 수 있다.
   만약 100명이 같은 장부를 가지고 있다면?, 1000명이 같은 장부를 가지고 있다면?
   장부를 가진 사람이 많을수록 조작하기 어려워지겠죠.
@@ -30,13 +40,7 @@ number: 2
   오직 이전 페이지와 연결되는 암호를 발견한 사람만 추가할 수 있게 된다.
   그리고 이 암호를 발견한 사람에게는 보상이 주어진다.
   위의 거래장부 한 장을 하나의 블록이라고 부르고, 이 블록들이 체인처럼 계속 연결되어 있는 모양이라서 블록체인이라고 부른다.</p>
-  
-<h1>This is header one</h1>
-<h2>This is header two</h2>
-<h3>This is header three</h3>
-<h4>This is header four</h4>
-<h5>This is header five</h5>
-<h6>This is header six</h6>
+ 
 
 <p>To make headers in Markdown, you preface the phrase with a hash mark (<code>#</code>). You
 place the same number of hash marks as the size of the header you want. For example,
@@ -71,3 +75,22 @@ a header three, you'd use three (<code>### Header Three</code>).</p>
   <p>And that's all there is to making headers in Markdown.</p>
   <a class="btn btn-lg btn-success" href="{{ site.baseurl}}/lesson/3">On to the next lesson!</a>
 </div>
+
+<script>
+  (function() {
+    var btn1 = $('.btn-next1');
+    var inputCode1 = $('#inputCode1');
+    var Q1 = $('.question1');
+    var Q2 = $('.question2');
+
+    btn1.click(function () {
+      var inputText1 = inputCode1[0].value; /* #inputCode1 의 값을 받아옴. */
+
+	 $('.table_answer1 .answer') = inputText1;
+      //if(inputText1 === '4') { /* inputCode1 의 값이 스트링 값이라서 스트링으로 비교 */
+      //  Q2.removeClass('hide'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
+      }
+    });
+  })($);
+
+</script>
