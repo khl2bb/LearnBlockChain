@@ -68,12 +68,12 @@ number: 2
     var Q1 = $('.question1');
     var Q2 = $('.question2');
 
-    btn1.click(function () {
+    btn-next1.click(function () {
       var inputText1 = inputCode1[0].value; /* #inputCode1 의 값을 받아옴. */
 
 	 $('.table_answer1 .answer') = inputText1;
       //if(inputText1 === '4') { /* inputCode1 의 값이 스트링 값이라서 스트링으로 비교 */
-      //  Q2.removeClass('hide'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
+        toBeRevealed.removeClass('hide'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
       }
     });
   })($);
