@@ -16,7 +16,7 @@ number: 2
 	<th>장부</th>
 	<tr><!-- 첫번째 줄 시작 -->
 	    <td>빌려준 금액</td>
-	    <td class = "answer"></td>
+	    <td class = "answer2"></td>
 	</tr><!-- 첫번째 줄 끝 -->
     </table>
 	
@@ -71,9 +71,9 @@ number: 2
     btn1.click(function () {
       var inputText1 = inputCode1[0].value; /* #inputCode1 의 값을 받아옴. */
 
-	 $('.table_answer1.answer') = inputText1;
+	 $('.table_answer1.answer2') = inputText1;
       //if(inputText1 === '4') { /* inputCode1 의 값이 스트링 값이라서 스트링으로 비교 */
-        Q2.removeClass('toBeRevealed'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
+        Q2.removeClass('question2 toBeRevealed'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
       }
     });
   })($);
