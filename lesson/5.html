@@ -1,79 +1,75 @@
 ---
 layout: default
-title: Blockquotes
-number: 5
+title: Headers
+number: 2
 ---
 
-<div class="row">
-<p>If you need to call special attention to a quote from another source, or design
-  a pull quote for a magazine article, then Markdown's <em>blockquote</em> syntax
-  will be useful. A blockquote is a sentence or paragraph that's been specially
-  formatted to draw attention to the reader. For example:</p>
-  <blockquote><p>
-  "The sin of doing nothing is the
-  deadliest of all the seven sins. It has been said that for evil men to accomplish
-  their purpose it is only necessary that good men should do nothing."
-</p></blockquote>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-<p>To create a block quote, all you have to do is preface a line with the "greater than"
-caret (<code>></code>). For example:
-<pre>
-> "In a few moments he was barefoot, his stockings folded in his pockets and his
-  canvas shoes dangling by their knotted laces over his shoulders and, picking a
-  pointed salt-eaten stick out of the jetsam among the rocks, he clambered down
-  the slope of the breakwater."
-</pre>
+<style> .toBeRevealed{display:none} </style>
+
+<div class="row">
+<h1>스마트 컨트랙트</h1>
+
+<p>
+        스마트 컨트랙트의 개념은 닉 자보가 1994년 처음 제시했다. 
+        암호학자이자 법학자였던 자보는 상업에 사용되는 계약의 법칙을 전자 플랫폼으로 옮겨오면서 법이 아니라 프로그램을 통해 계약이 이행되고, 
+        이에 따라 보안을 갖추는 동시에 계약의 이행에서 제 3자에 대한 의존도를 줄이는 것을 목표로 했다.
 </p>
 
-<p>In the box below, turn the book quotation into a blockquote:</p>
-  <div class="col-md-5 scratchpad"></div>
-  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"></span>
-  <div class="col-md-5 renderpad"></div>
-</div>
+<p>자판기 이미지 튜토리얼 추가(아날로그 스마트 컨트랙트)</p>
+  
+
 <button class="btn btn-default btn-skip">Skip</button>
 
-<div class="toBeRevealed">
-  <div class="row">
-  <hr>
-  <p>Marvelous!</p>
-  <p>You can also place a caret character on each line of the quote. This is particularly
-  useful if your quote spans multiple paragraphs. For example:</p>
-  <pre>
-> His words seemed to have struck some deep chord in his own nature. Had he spoken
-of himself, of himself as he was or wished to be? Stephen watched his face for some
-moments in silence. A cold sadness was there. He had spoken of himself, of his own
-loneliness which he feared.
->
-> —Of whom are you speaking? Stephen asked at length.
->
-> Cranly did not answer.</pre>
-  <p>Notice that even blank lines must contain the caret character. This ensures
-    that the entire blockquote is grouped together.</p>
-
-  <p>In the box below, Make the entire quotation a block quote by inserting a caret
-    on each line.</p>
-    <div class="col-md-5 scratchpad"></div>
-    <div class="col-md-5 renderpad"></div>
-  </div>
-  <button class="btn btn-default btn-skip">Skip</button>
+<div class="question5 toBeRevealed">
+  <a class="btn btn-lg btn-success" href="{{ site.baseurl}}/lesson/3">On to the next lesson!</a>
 </div>
 
-<div class="toBeRevealed">
-  <div class="row">
-  <hr>
-  <p>Tremendous!</p>
-  <p>Block quotes can contain other Markdown elements, such as italics, images,
-  or links.</p>
-  <p>In the box below, make the French text italic (not including the exclamation point).
-  Also, turn the entire quote into a blockquote.</p>
-    <div class="col-md-5 scratchpad"></div>
-    <div class="col-md-5 renderpad"></div>
-  </div>
-  <button class="btn btn-default btn-skip">Skip</button>
-</div>
+<script>
+ (function() {
+      var btn1 = $('.btn-next1');
+      var btn2 = $('.btn-next2');
+      var btn3 = $('.btn-next3');
+      var btn4 = $('.btn-next4');
+      var skipbtn = $('.btn-skip');
+      var IC1 = $('#inputCode1');
+      var Q1 = $('.question1');
+      var Q2 = $('.question2');
+      var Q3 = $('.question3');
+      var Q4 = $('.question4');
+      var Q5 = $('.question5');
 
-<div class="toBeRevealed">
-  <hr>
-  <p>Ta da! You've learned all there is to creating blockquotes in Markdown!</p>
-  <a class="btn btn-lg btn-success" href="{{ site.baseurl}}/lesson/6">On to the next lesson!</a>
-</div>
+      var answer1 = $('.answer2');
+      var answer2 = $('.answer3');
+
+      btn1.click(function () {
+
+        answer1.text(IC1.val() + "원");
+        //if(inputText1 === '4') { /* inputCode1 의 값이 스트링 값이라서 스트링으로 비교 */
+        Q2.removeClass('toBeRevealed'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
+    });
+
+        btn2.click(function () {
+            answer2.text(IC1.val() - 1 + "원");
+            Q3.removeClass('toBeRevealed');
+        });
+
+        btn3.click(function () {
+            Q4.removeClass('toBeRevealed');
+        });
+
+        btn4.click(function () {
+            Q5.removeClass('toBeRevealed');
+        });
+
+        skipbtn.click(function () {
+            Q2.removeClass('toBeRevealed');
+            Q3.removeClass('toBeRevealed');
+            Q4.removeClass('toBeRevealed');
+            Q5.removeClass('toBeRevealed');
+        });
+    })($);
+
+
+</script>
