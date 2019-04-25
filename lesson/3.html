@@ -4,79 +4,83 @@ title: 탈중앙화
 number: 3
 ---
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
 <div class="row">
 <p>탈중앙화는 중앙화를 탈피한다는 말이에요</p>
 
 <p>중앙으로 집중되는 것을 벗어난다 이말이에요. 분산된다는 것이죠. 이게 왜 중요할까요??</p>
 
 <p>중앙으로 집중되면 관리가 쉬워지지만 누군가 제어하기도 쉽겠죠. 누군가가 제어, 독점해서는 안되는 시스템에서는 분산화가 필요할 것 입니다.</p>
-  <div class="col-md-5 scratchpad"></div>
-  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"></span>
-  <div class="col-md-5 renderpad"></div>
-</div>
+ 
+<button type="button" class="btn-next1">다음단계</button>
 <button class="btn btn-default btn-skip">Skip</button>
 
-<div class="toBeRevealed">
+<div class="question2 toBeRevealed">
   <div class="row">
   <hr>
-  <p>Nice work!</p>
-  <p>You can add emphasis to link texts, if you like. In the box below, make the
-  phrase "really, really" bold, and have the entire sentence link to www.dailykitten.com.
-  You'll want to make sure that the bold phrasing occurs within the link text brackets.</p>
-    <div class="col-md-5 scratchpad"></div>
-    <div class="col-md-5 renderpad"></div>
+<p>
+우선, 정치적으로 탈중앙화 되어있다.
+어느 한 주체로부터 통제를 받지 않는다는 의미이다.
+또한, 구조적으로 탈중앙화 되어있다. 다수의 노드로 구성되어 있어,
+한 노드가 동작하지 않더라도 충분히 시스템이 작동할 수 있다.
+마지막으로, 논리적으로 중앙화 되어있다.
+전체의 노드가 합의과정을 거치고, 한 대의 컴퓨터처럼 작동한다는 뜻이다.</p>
+
+<button type="button" class="btn-next2">다음단계</button>
+
+<div class="question3 toBeRevealed">
+<p>
+장애 허용성(Fault tolerance) : 탈중앙화된 시스템은 많은 수의 독립된 노드들로
+이루어져 있기 때문에 어느 한 노드나 트랜잭션 처리과정에서 오류가 발생하더라도
+전체적인 시스템에 장애가 발생할 확률은 낮아진다
+</p>
+<p>
+공격 저항성(Attack resistance) : 중앙화된 시스템에 비해 탈중앙화된 시스템을
+공격하거나 해킹하는데는 비용과 시간이 많이 든다.
+</p>
+<p>
+담합 저항성(Collusion resistance) : 중앙화된 기관이나 기업들은 자신들끼리
+담합하여 제3자를 억압하거나 부를 빼앗을 수 있지만,
+탈중앙화된 시스템의 사용자들은 다른 사용자들에게
+피해를 끼쳐 자신의 이득을 취하는 행동을 하기 어렵다.
+</p>  
+ <button type="button" class="btn-next3">다음단계</button> 
   </div>
+
+
+  
   <button class="btn btn-default btn-skip">Skip</button>
-</div>
 
-<div class="toBeRevealed">
-  <div class="row">
+
+<div class="question4 toBeRevealed">
   <hr>
-  <p>Fantastic!</p>
-  <p>Although it might make for an awkward experience, you can make links within
-  headings, too.</p>
-  <p>For this next tutorial, make the text a heading four, and turn the phrase
-  "the BBC" into a link to www.bbc.com/news:</p>
-    <div class="col-md-5 scratchpad"></div>
-    <div class="col-md-5 renderpad"></div>
-  </div>
-  <button class="btn btn-default btn-skip">Skip</button>
+  <p>이렇게 탈중앙화에 대한 내용이 끝났습니다!</p>
+  <a class="btn btn-lg btn-success" href="{{ site.baseurl}}/lesson/4">다음으로..</a>
 </div>
 
-<div class="toBeRevealed">
-  <div class="row">
-  <hr>
-  <p>That's all there is to writing inline links.</p>
-  <p>The other link type is called a <em>reference</em> link. As the name implies,
-    the link is actually a reference to another place in the document. Here's an example of what
-    we mean:</p>
-  <pre>
-     Here's [a link to something else][another place].
-     Here's [yet another link][another-link].
-     And now back to [the first link][another place].
+<script>
 
-     [another place]: www.github.com
-     [another-link]: www.google.com
-  </pre>
-  <p>The "references" above are the second set of brackets: <code>[another place]</code> and
-    <code>[another-link]</code>. At the bottom of a Markdown document, these brackets are defined
-    as proper links to outside websites. An advantage of the reference link style
-    is that multiple links to the same place only need to be updated once. For
-    example, if we decide to make all of the <code>[another place]</code> links go somewhere
-    else, we only have to change the single reference link.</p>
-  <p>Reference links don't appear in the rendered Markdown. You define them by providing
-    the same tag name wrapped in brackets, followed by a colon, followed by the link.</p>
-  <p>In the box below, we've started writing out some reference links. You'll
-    need to finish them up! Call the first reference tag "a fun place", and make
-    it link to www.zombo.com; make the second link out to www.stumbleupon.com.</p>
-    <div class="col-md-5 scratchpad"></div>
-    <div class="col-md-5 renderpad"></div>
-  </div>
-  <button class="btn btn-default btn-skip">Skip</button>
-</div>
+var btn1 = $('.btn-next1');
+var btn2 = $('.btn-next2');
+var btn3 = $('.btn-next3');
+var Q2 = $('.question2');
+var Q3 = $('.question3');
+var Q4 = $('.question4');
 
-<div class="toBeRevealed">
-  <hr>
-  <p>You now know how to make links in Markdown!</p>
-  <a class="btn btn-lg btn-success" href="{{ site.baseurl}}/lesson/4">On to the next lesson!</a>
-</div>
+btn1.click(function () {
+
+Q2.removeClass('toBeRevealed'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
+});
+
+btn2.click(function () {
+
+Q3.removeClass('toBeRevealed'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
+});
+
+btn3.click(function () {
+
+Q4.removeClass('toBeRevealed'); /* Q2, 즉 .question2에 hide라는 클래스를 삭제해서 display:none이 사라져 question2가 노출됨. */
+});
+
+</script>
