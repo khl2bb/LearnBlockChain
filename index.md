@@ -12,5 +12,5 @@ title: 블록체인이 뭐지?
 블록체인은 어떤 알고리즘으로 구성되어 있을까?
 
 한번 배워봅시다.<br>
-<a class="btn btn-lg btn-success" href="{{ site.baseurl}}/lesson/1">준비됬나요? 시작해봅시다!</a>
+<a class="btn btn-lg btn-success" href="{{ site.baseurl}}/lesson/2">준비됬나요? 시작해봅시다!</a>
 
